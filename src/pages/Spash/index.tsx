@@ -1,10 +1,14 @@
 import React from 'react';
-import { View } from 'react-native';
-
-// import { Container } from './styles';
+import { Container, Logo } from './styles';
+//@ts-ignore
+import logo from '../../assets/logo.png'
 
 const Splash: React.FC = () => {
-  return <View />;
+  return (
+    <Container>
+      <Logo source={logo}/>
+    </Container>
+  )
 }
 
 export default Splash;

@@ -9,7 +9,9 @@ const Stack = createStackNavigator();
 const Routes: React.FC = () => {
     return (
         <NavigationContainer>
-          <Stack.Navigator>
+          <Stack.Navigator screenOptions={{
+            headerShown: false
+          }}>
             <Stack.Screen name="Splash" component={Splash} />
             <Stack.Screen name="Login" component={Login} />
           </Stack.Navigator>
